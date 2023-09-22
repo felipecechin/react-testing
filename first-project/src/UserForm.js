@@ -6,6 +6,8 @@ function UserForm({ onUserAdd }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setEmail('');
+    setName('');
 
     onUserAdd({ name, email });
   };
