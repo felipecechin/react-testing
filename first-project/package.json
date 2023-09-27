@@ -16,7 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "rtl-book-examples": "npx rtl-book serve src/roles-notes.js"
+    "rtl-book-example-1": "npx rtl-book serve notes/roles-notes.js",
+    "rtl-book-example-2": "npx rtl-book serve notes/roles-notes-2.js",
+    "rtl-book-example-3": "npx rtl-book serve notes/query-notes.js"
   },
   "eslintConfig": {
     "extends": [
