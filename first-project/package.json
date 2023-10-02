@@ -17,8 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "rtl-book-example-1": "npx rtl-book serve notes/roles-notes.js",
-    "rtl-book-example-2": "npx rtl-book serve notes/roles-notes-2.js",
-    "rtl-book-example-3": "npx rtl-book serve notes/query-notes.js"
+    "rtl-book-example-2": "npx rtl-book serve notes/matcher-notes.js",
+    "rtl-book-example-3": "npx rtl-book serve notes/query-notes.js",
+    "rtl-book-example-4": "npx rtl-book serve notes/criteria-notes.js"
   },
   "eslintConfig": {
     "extends": [
