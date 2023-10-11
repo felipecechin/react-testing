@@ -1,6 +1,12 @@
-import { render } from '@testing-library/react'
+import { render, screen, act } from '@testing-library/react'
 import RepositoriesListItem from './RepositoriesListItem'
 import { MemoryRouter } from 'react-router-dom'
+
+// jest.mock('../tree/FileIcon', () => {
+//   return () => {
+//     return 'File Icon Component'
+//   }
+// })
 
 function renderComponent() {
   const repository = {
@@ -19,6 +25,22 @@ function renderComponent() {
   )
 }
 
-test('shows a link to the github homepage for this repository', () => {
+test('shows a link to the github homepage for this repository', async () => {
   renderComponent()
+
+  await screen.findByRole('img', {
+    name: 'Javascript'
+  })
+
+  // await act(async () => {
+  //   await pause()
+  // })
 })
+
+const pause = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve()
+    }, 1000)
+  })
+}
