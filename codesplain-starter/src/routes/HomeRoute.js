@@ -8,7 +8,7 @@ function HomeRoute() {
   const { data: rustRepos } = useRepositories('stars:>10000 language:rust');
   const { data: goRepos } = useRepositories('stars:>10000 language:go');
   const { data: pythonRepos } = useRepositories('stars:>10000 language:python');
-  const { data: javasRepos } = useRepositories('stars:>10000 language: java');
+  const { data: javasRepos } = useRepositories('stars:>10000 language:java');
 
   return (
     <div>
